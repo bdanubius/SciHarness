@@ -12,8 +12,6 @@ In short, SciHarness is an LLM-agnostic approach for streamlining iteration acro
 
 SciHarness achieves these goals through a consistent directory structure, workflow conventions, and two integrated tools — **NanoBanana** (schematic generation via Gemini) and **Edison** (literature search) — so that any AI agent can pick up a project mid-session with shared project state. SciHarness has been primarily prototyped in Cursor, allowing for easy switching between LLMs, but aims to be compatible with other agentic coding solutions.
 
-![SciHarness overview](assets/overview.png) 
-
 ---
 
 ## Philosophy
