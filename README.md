@@ -2,7 +2,7 @@
 
 SciHarness is a project scaffold + conventions layer + tool integrations for AI-assisted academic research.
 
-SciHarness aims to catalyze day-to-day scientific progress by:
+SciHarness aims to catalyze day-to-day scientific progress by: 
 (1) Providing a single entrypoint for coding, writing, literature search, and figure generation.
 (2) Maintaining persistent goals across projects, figures, and panels for easy resumption of work.
 (3) Reducing time spent preparing for presentations by continuously generating `.html` representations of progress.
