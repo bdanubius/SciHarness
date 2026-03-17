@@ -1,0 +1,18 @@
+# API keys — never commit
+.env
+
+# Checkpoint HTML snapshots are large; only commit the markdown
+paper-project/checkpoints/**/*.html
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# Editor
+.cursor/

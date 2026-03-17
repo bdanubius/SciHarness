@@ -1,0 +1,7 @@
+# NanoBanana (nanobanana.py) — Gemini image generation
+google-genai
+pyyaml
+
+# lit_search.py — Edison literature search (requires Python >=3.11)
+# Get API key at platform.edisonscientific.com
+edison-client

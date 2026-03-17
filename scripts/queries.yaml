@@ -1,0 +1,21 @@
+# Edison Literature Query Registry
+# Run with: python3.12 scripts/lit_search.py --category <category>
+#
+# Job types:
+#   LITERATURE_HIGH  — deep reasoning, 5-15 min per query
+#   LITERATURE       — faster, lighter version
+#   PRECEDENT        — novelty/originality checks
+
+queries:
+  - id: example_query_1
+    category: fig1
+    job: LITERATURE_HIGH
+    query: >
+      Replace this with your actual query about the biological phenomenon
+      you want to find citations for.
+
+  - id: example_precedent_1
+    category: precedent
+    job: PRECEDENT
+    query: >
+      Has [specific finding or method] been reported before in the context of [field]?

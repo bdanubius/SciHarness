@@ -1,0 +1,16 @@
+# NanoBanana Schematic Registry
+# Run with: python3.12 scripts/nanobanana.py --id <id> --generate
+#
+# Types: schematic | flowchart | summary_plot
+# See CONVENTIONS.md → NanoBanana section for description writing rules
+
+figures:
+  - id: fig1_study_design
+    figure: fig1_name
+    type: schematic
+    caption: >
+      Study design overview.
+    description: >
+      Replace this with a detailed spatial description of the schematic.
+      See CONVENTIONS.md for formatting rules and NeurIPS aesthetic defaults.
+      Aspect ratio 21:9. White background (#FFFFFF). Left-to-right flow.
