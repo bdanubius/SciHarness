@@ -35,7 +35,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_DIR = SCRIPT_DIR.parent                      # paper-project/
 QUERIES_FILE = SCRIPT_DIR / "queries.yaml"
 OUTPUT_DIR = PROJECT_DIR / "literature"
-ENV_FILE = PROJECT_DIR.parent / ".env"               # repo root .env
+ENV_FILE = PROJECT_DIR / ".env"                      # repo root .env
 
 # ---------------------------------------------------------------------------
 # Helpers
@@ -43,7 +43,10 @@ ENV_FILE = PROJECT_DIR.parent / ".env"               # repo root .env
 
 def load_queries(path: Path) -> list[dict]:
     with open(path) as f:
-        return yaml.safe_load(f)
+        data = yaml.safe_load(f)
+    if isinstance(data, dict) and "queries" in data:
+        return data["queries"]
+    return data
 
 
 def get_api_key() -> str:

@@ -1,5 +1,11 @@
 # API keys — never commit
 .env
+.env.*
+!.env.example
+
+# Generated figures (NanoBanana output) — commit intentionally if needed
+figures/*/schematics/*.png
+figures/*/schematics/*_prompt.txt
 
 # Checkpoint HTML snapshots are large; only commit the markdown
 paper-project/checkpoints/**/*.html

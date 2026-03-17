@@ -49,7 +49,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_DIR = SCRIPT_DIR.parent                        # paper-project/
 FIGURES_YAML = SCRIPT_DIR / "figures.yaml"
 FIGURES_DIR = PROJECT_DIR / "figures"
-ENV_FILE = PROJECT_DIR.parent / ".env"                 # repo root .env
+ENV_FILE = PROJECT_DIR / ".env"                        # repo root .env
 
 # ---------------------------------------------------------------------------
 # Models
@@ -73,7 +73,10 @@ Generation parameters:
 
 def load_figures(path: Path) -> list[dict]:
     with open(path) as f:
-        return yaml.safe_load(f)
+        data = yaml.safe_load(f)
+    if isinstance(data, dict) and "figures" in data:
+        return data["figures"]
+    return data
 
 
 def build_image_prompt(entry: dict) -> str:
